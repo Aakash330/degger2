@@ -1,8 +1,9 @@
 package com.example.degger2use;
 
 import dagger.Component;
+import dagger.Module;
 
-@Component
+@Component( modules ={WheelsModule.class})
 public interface CarComponent {
     Car getCar();
 
